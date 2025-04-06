@@ -91,3 +91,82 @@
 | `<figure>`       | Specifies self-contained content                                  | Yes               | `class`, `id`, `style`                   | Block        |
 | `<picture>`      | Defines a container for multiple image resources                  | Yes               | `srcset`, `sizes`, `type`, `media`, `width`, `height`   | Block        |
 | `<svg>`          | Defines a container for SVG graphics                              | Yes               | `width`, `height`, `viewBox`, `fill`, `xmlns`, `preserveAspectRatio`, `x`, `y`, `version`, `viewBox` | Block        |
+
+## Audio / Video
+
+| Tag              | Description                                                       | Pair Tag (Yes/No) | Common Attributes                        | Block/Inline |
+|------------------|-------------------------------------------------------------------|-------------------|------------------------------------------|--------------|
+| `<audio>`        | Defines sound content          | Yes               | `src`, `controls`, `autoplay`, `loop`, `muted`, `preload`, `volume`, `crossorigin`, `type` | Block        |
+| `<source>`       | Defines multiple media resources for media elements (`<video>`, `<audio>`, and `<picture>`) | No                | `src`, `type`, `media`, `sizes`          | Inline       |
+| `<track>`        | Defines text tracks for media elements (`<video>` and `<audio>`)  | Yes               | `kind`, `src`, `srclang`, `label`, `default` | Inline       |
+| `<video>`        | Defines a video or movie                                          | Yes               | `src`, `controls`, `autoplay`, `loop`, `muted`, `poster`, `preload`, `width`, `height`, `crossorigin` | Block        |
+
+## Links
+| Tag              | Description                           | Pair Tag (Yes/No) | Common Attributes                        | Block/Inline |
+|------------------|---------------------------------------|-------------------|------------------------------------------|--------------|
+| `<a>`            | Defines a hyperlink                   | Yes               | `href`, `target`, `rel`, `type`, `title`, `download`, `hreflang`, `ping`, `media`, `referrerpolicy` | Inline       |
+| `<link>`         | Defines the relationship between a document and an external resource (most used to link to style sheets) | No       | `rel`, `href`, `type`, `sizes`, `media`, `hreflang`, `as` | Inline       |
+| `<nav>`          | Defines navigation links              | Yes               | `class`, `id`, `style`     | Block        |
+
+## Lists
+| Tag              | Description                                                       | Pair Tag (Yes/No) | Common Attributes                        | Block/Inline |
+|------------------|-------------------------------------------------------------------|-------------------|------------------------------------------|--------------|
+| `<menu>`         | Defines an alternative unordered list                             | Yes               | `type`                                   | Block        |
+| `<ul>`           | Defines an unordered list                                         | Yes               | `type`                                   | Block        |
+| `<ol>`           | Defines an ordered list                                           | Yes               | `type`, `start`, `reversed`              | Block        |
+| `<li>`           | Defines a list item                                               | Yes               | `value`                                  | Block        |
+| `<dir>`          | Not supported in HTML5. Use `<ul>` instead.                       | Yes               | N/A                                      | Block        |
+| `<dl>`           | Defines a description list                                        | Yes               | N/A                                      | Block        |
+| `<dt>`           | Defines a term/name in a description list                         | Yes               | N/A                                      | Inline       |
+| `<dd>`           | Defines a description of a term/name in a description list        | Yes               | N/A                                      | Block        |
+
+## Tables
+| Tag              | Description                                                       | Pair Tag (Yes/No) | Common Attributes                        | Block/Inline |
+|------------------|-------------------------------------------------------------------|-------------------|------------------------------------------|--------------|
+| `<table>`        | Defines a table                                                   | Yes               | `border`, `cellspacing`, `cellpadding`, `width`, `height`, `align`, `bgcolor`, `summary`, `style` | Block        |
+| `<caption>`      | Defines a table caption                                           | Yes               | `align`, `style`                         | Block        |
+| `<th>`           | Defines a header cell in a table                                  | Yes               | `colspan`, `rowspan`, `scope`, `abbr`, `align`, `valign`, `style` | Block        |
+| `<tr>`           | Defines a row in a table                                          | Yes               | `align`, `bgcolor`, `style`              | Block        |
+| `<td>`           | Defines a cell in a table                                         | Yes               | `colspan`, `rowspan`, `align`, `valign`, `style` | Block        |
+| `<thead>`        | Groups the header content in a table                              | Yes               | `align`, `bgcolor`, `style`              | Block        |
+| `<tbody>`        | Groups the body content in a table                                | Yes               | `align`, `bgcolor`, `style`              | Block        |
+| `<tfoot>`        | Groups the footer content in a table                              | Yes               | `align`, `bgcolor`, `style`              | Block        |
+| `<col>`          | Specifies column properties for each column within a `<colgroup>` element | No                | `span`, `width`, `align`, `valign`, `style` | Inline       |
+| `<colgroup>`     | Specifies a group of one or more columns in a table for formatting| Yes               | `span`, `align`, `valign`, `style`       | Block        |
+
+# Styles and semantics
+| Tag              | Description                                                       | Pair Tag (Yes/No) | Common Attributes                        | Block/Inline |
+|------------------|-------------------------------------------------------------------|-------------------|------------------------------------------|--------------|
+| `<style>`        | Defines style information for a document                          | Yes               | `type`, `media`, `scoped`, `title`       | Block        |
+| `<div>`          | Defines a section in a document                                   | Yes               | `class`, `id`, `style`, `title`, `lang`  | Block        |
+| `<span>`         | Defines a section in a document                                   | Yes               | `class`, `id`, `style`, `title`, `lang`  | Inline       |
+| `<header>`       | Defines a header for a document or section                        | Yes               | `class`, `id`, `style`, `role`, `lang`   | Block        |
+| `<hgroup>`       | Defines a header and related content                              | Yes               | `class`, `id`, `style`                   | Block        |
+| `<footer>`       | Defines a footer for a document or section                        | Yes               | `class`, `id`, `style`, `role`, `lang`   | Block        |
+| `<main>`         | Specifies the main content of a document                          | Yes               | `class`, `id`, `style`, `role`, `lang`   | Block        |
+| `<section>`      | Defines a section in a document                                   | Yes               | `class`, `id`, `style`, `role`, `lang`   | Block        |
+| `<search>`       | Defines a search section                                          | Yes               | `class`, `id`, `style`, `role`, `lang`   | Block        |
+| `<article>`      | Defines an article                                                | Yes               | `class`, `id`, `style`, `role`, `lang`   | Block        |
+| `<aside>`        | Defines content aside from the page content                       | Yes               | `class`, `id`, `style`, `role`, `lang`   | Block        |
+| `<details>`      | Defines additional details that the user can view or hide         | Yes               | `open`, `class`, `id`, `style`, `role`, `lang` | Block        |
+| `<dialog>`       | Defines a dialog box or window                                    | Yes               | `open`, `class`, `id`, `style`, `role`, `lang` | Block        |
+| `<summary>`      | Defines a visible heading for a `<details>` element               | Yes               | `class`, `id`, `style`, `role`, `lang`   | Inline       |
+| `<data>`         | Adds a machine-readable translation of a given content            | Yes               | `value`, `class`, `id`, `style`, `lang`   | Inline       |
+
+## Meta info
+| Tag            | Description                                                      | Pair Tag (Yes/No) | Common Attributes                        | Block/Inline |
+|----------------|------------------------------------------------------------------|-------------------|------------------------------------------|--------------|
+| `<head>`       | Defines information about the document                           | Yes               | `profile`                                | Block        |
+| `<meta>`       | Defines metadata about an HTML document                          | No                | `charset`, `name`, `content`, `http-equiv`, `scheme`, `property` | Inline     |
+| `<base>`       | Specifies the base URL/target for all relative URLs in a document| No                | `href`, `target`                         | Block        |
+| `<basefont>`   | Not supported in HTML5. Use CSS instead. Specifies a default color, size, and font for all text in a document | No              | `color`, `face`, `size`            | Block        |
+
+## Programming
+| Tag            | Description                                                       | Pair Tag (Yes/No) | Common Attributes                        | Block/Inline |
+|----------------|-------------------------------------------------------------------|-------------------|------------------------------------------|--------------|
+| `<script>`     | Defines a client-side script                                      | No                | `src`, `type`, `async`, `defer`, `charset`, `language`, `crossorigin` | Block        |
+| `<noscript>`   | Defines an alternate content for users that do not support client-side scripts | Yes               | `class`, `id`, `style`, `lang`           | Block        |
+| `<applet>`     | Not supported in HTML5. Use `<embed>` or `<object>` instead. Defines an embedded applet | Yes               | `code`, `codebase`, `width`, `height`, `name`, `align`, `alt`, `archive`, `hspace`, `vspace` | Block        |
+| `<embed>`      | Defines a container for an external resource                      | No                | `src`, `type`, `width`, `height`, `align`, `name`, `autoplay`, `loop`, `autostart` | Inline       |
+| `<object>`     | Defines a container for an external resource                      | Yes               | `data`, `type`, `width`, `height`, `name`, `form`, `usemap`, `archive`, `align`, `border`, `classid`, `codebase` | Block        |
+| `<param>`      | Defines a parameter for an object                                 | No                | `name`, `value`, `type`, `valuetype`     | Inline       |
