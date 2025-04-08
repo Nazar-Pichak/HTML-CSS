@@ -1,23 +1,23 @@
 ## Base and global tags
 
-| Tag               | Description                                    | Pair Tag (Yes/No) | Common Attributes                        | Block/Inline |
-|-------------------|------------------------------------------------|-------------------|------------------------------------------|--------------|
-| `<!DOCTYPE>`      | Defines the document type                      | No                | N/A                                      | N/A          |
-| `<html>`          | Defines an HTML document                       | Yes               | `lang` (specifies the language of the document) | Block |
-| `<head>`          | Contains metadata/information for the document | Yes               | `profile` (defines a metadata profile)   | Block        |
-| `<title>`         | Defines a title for the document               | Yes               | N/A                                      | Inline       |
-| `<body>`          | Defines the document's body                    | Yes               | `class`, `id`, `style` (global only)     | Block        |
-| `<h1>` to `<h6>`  | Defines HTML headings                          | Yes               | `class`, `id`, `style` (global only)     | Block        |
-| `<p>`             | Defines a paragraph                            | Yes               | `class`, `id`, `style` (global only)     | Block        |
-| `<br>`            | Inserts a single line break                    | No                | N/A                                      | Inline       |
-| `<hr>`            | Defines a thematic change in the content       | No                | `class`, `id`, `style`                   | Block        |
-| `<!--...-->`      | Defines a comment                              | No                | N/A                                      | N/A          |
+| Tag              | Description                                    | Pair Tag (Yes/No) | Common Attributes                        | Block/Inline |
+|------------------|------------------------------------------------|-------------------|------------------------------------------|--------------|
+| `<!DOCTYPE>`     | Defines the document type                      | No                | N/A                                      | N/A          |
+| `<html>`         | Defines an HTML document                       | Yes               | `lang`, `xmlns`                          | Block        |
+| `<head>`         | Contains metadata/information for the document | Yes               | `profile` (defines a metadata profile)   | Block        |
+| `<title>`        | Defines a title for the document               | Yes               | N/A                                      | Inline       |
+| `<body>`         | Defines the document's body                    | Yes               | `class`, `id`, `style` (global only)     | Block        |
+| `<h1>` to `<h6>` | Defines HTML headings                          | Yes               | `class`, `id`, `style` (global only)     | Block        |
+| `<p>`            | Defines a paragraph                            | Yes               | `class`, `id`, `style` (global only)     | Block        |
+| `<br>`           | Inserts a single line break                    | No                | N/A                                      | Inline       |
+| `<hr>`           | Defines a thematic change in the content       | No                | `class`, `id`, `style`                   | Block        |
+| `<!--...-->`     | Defines a comment                              | No                | N/A                                      | N/A          |
 
 ## Text formatting, progresses, hidden content
 | Tag              | Description                                                           | Pair Tag (Yes/No) | Common Attributes                       | Block/Inline |
 |------------------|-----------------------------------------------------------------------|-------------------|-----------------------------------------|--------------|
 | `<acronym>`      | Not supported in HTML5. Use `<abbr>` instead. Defines an acronym      | Yes               | N/A                                     | Inline       |
-| `<abbr>`         | Defines an abbreviation or an acronym                                 | Yes               | `title` (provides a description for the abbreviation) | Inline       |
+| `<abbr>`         | Defines an abbreviation or an acronym                                 | Yes               | `title` (description of abbreviation)   | Inline       |
 | `<address>`      | Defines contact information for the author/owner of a document/article| Yes               | `class`, `id`, `style`                  | Block        |
 | `<b>`            | Defines bold text                                                     | Yes               | `class`, `id`, `style`                  | Inline       |
 | `<bdi>`          | Isolates a part of text that might be formatted in a different direction | Yes            | `class`, `id`, `style`                  | Inline       |
@@ -154,10 +154,10 @@
 | `<data>`         | Adds a machine-readable translation of a given content            | Yes               | `value`, `class`, `id`, `style`, `lang`   | Inline       |
 
 ## Meta info
-| Tag            | Description                                                      | Pair Tag (Yes/No) | Common Attributes                        | Block/Inline |
-|----------------|------------------------------------------------------------------|-------------------|------------------------------------------|--------------|
-| `<head>`       | Defines information about the document                           | Yes               | `profile`                                | Block        |
-| `<meta>`       | Defines metadata about an HTML document                          | No                | `charset`, `name`, `content`, `http-equiv`, `scheme`, `property` | Inline     |
+| Tag              | Description                                                      | Pair Tag (Yes/No) | Common Attributes                        | Block/Inline |
+|------------------|------------------------------------------------------------------|-------------------|------------------------------------------|--------------|
+| `<head>`         | Defines information about the document                           | Yes               | `profile`                                | Block        |
+| `<meta>`         | Defines metadata about an HTML document                          | No                | `charset`, `name`, `content`, `http-equiv`, `scheme`, `property` | Inline     |
 | `<base>`       | Specifies the base URL/target for all relative URLs in a document| No                | `href`, `target`                         | Block        |
 | `<basefont>`   | Not supported in HTML5. Use CSS instead. Specifies a default color, size, and font for all text in a document | No              | `color`, `face`, `size`            | Block        |
 

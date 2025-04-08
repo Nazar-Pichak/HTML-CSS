@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Příklady Layoutů v CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    h2 {
+      background: #f0f0f0;
+      padding: 5px;
+    }
+    .menu {
+      background: teal;
+      padding: 10px;
+      color: white;
+    }
+    @media (max-width: 600px) {
+      .menu {
+        background: crimson;
+      }
+    }
+    .wrapper {
+      container-type: inline-size;
+      border: 2px solid #000;
+    }
+    .box {
+      background: pink;
+      padding: 10px;
+    }
+    @container (min-width: 400px) {
+      .box {
+        background: lightgreen;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>1. Normal Flow Layout</h2>
+    <div style="background: lightblue;">Blok 1</div>
+    <div style="background: lightgreen;">Blok 2</div>
+    <span style="background: pink;">Inline 1</span>
+    <span style="background: orange;">Inline 2</span>
+  </section>
+
+  <section>
+    <h2>2. Float Layout</h2>
+    <div style="width: 100%; overflow: hidden;">
+      <div style="float: left; width: 30%; background: lightcoral;">Sidebar</div>
+      <div style="float: right; width: 70%; background: lightgray;">Content</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Positioned Layout</h2>
+    <div style="position: relative; height: 200px; background: #eee;">
+      <div style="position: absolute; top: 20px; left: 20px; background: lightblue;">
+        Absolutní box
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Flexbox Layout</h2>
+    <div style="display: flex; justify-content: space-around; background: #ddd; padding: 10px;">
+      <div style="background: red; padding: 10px;">Box 1</div>
+      <div style="background: green; padding: 10px;">Box 2</div>
+      <div style="background: blue; padding: 10px;">Box 3</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>5. Grid Layout</h2>
+    <div style="display: grid; grid-template-columns: 1fr 3fr; gap: 10px; background: #ccc; padding: 10px;">
+      <div style="background: plum;">Sidebar</div>
+      <div style="background: palegreen;">Main Content</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>6. Table Layout</h2>
+    <div style="display: table; width: 100%;">
+      <div style="display: table-row;">
+        <div style="display: table-cell; background: lightyellow;">Sloupec 1</div>
+        <div style="display: table-cell; background: lightpink;">Sloupec 2</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>7. Multi-column Layout</h2>
+    <div style="column-count: 3; column-gap: 20px;">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>8. Responsive Layout (Media Queries)</h2>
+    <div class="menu">Responzivní menu – změň velikost okna!</div>
+  </section>
+
+  <section>
+    <h2>9. Container Queries (nové prohlížeče)</h2>
+    <div class="wrapper">
+      <div class="box">Změň šířku wrapperu, mění se barva</div>
+    </div>
+  </section>
+
+</body>
+</html>
