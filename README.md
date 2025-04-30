@@ -2,10 +2,10 @@
 
 Practicing with intermidiate HTML and CSS concepts.
 
-# Intermediate HTML
+## Intermediate HTML
 - Semantic tags
 
-# Intermediate CSS
+## Intermediate CSS
 
 - Terminology
 - Shorthands (margin, background, animation)
